@@ -94,9 +94,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twindigital/eslint-config@npm:1.0.1":
-  version: 1.0.1
-  resolution: "@twindigital/eslint-config@npm:1.0.1"
+"@twindigital/eslint-config@npm:1.0.3":
+  version: 1.0.3
+  resolution: "@twindigital/eslint-config@npm:1.0.3"
   dependencies:
     "@typescript-eslint/parser": 5.1.0
   peerDependencies:
@@ -110,7 +110,7 @@ __metadata:
     eslint-plugin-promise: ^5.1.0
     eslint-plugin-react: ^7.26.1
     eslint-plugin-react-hooks: ^4.2.0
-  checksum: f15422c9a86210aa0a5a82bea237f49ad39dcc45aaea49ef20895fcd59f90803be7ab31d37a4991c9ca4094b4e9d1550dfdf597427cf675a802b50d97be91cac
+  checksum: 7abbe74149922b5601a322d7f69f89219360fb3ceb52ff0cd395ea0d4fd8e9b8728172bff3b0797137c350f4bdb9f0c6eece8bc618338028ca4139ec357e1e2c
   languageName: node
   linkType: hard
 
@@ -118,7 +118,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@twindigital/shine@workspace:."
   dependencies:
-    "@twindigital/eslint-config": 1.0.1
+    "@twindigital/eslint-config": 1.0.3
     "@types/lodash": 4.14.176
     "@types/node-fetch": 3.0.2
     "@typescript-eslint/eslint-plugin": 5.1.0
