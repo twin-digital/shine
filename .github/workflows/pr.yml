@@ -7,8 +7,7 @@ on:
 jobs:
   enable-automerge:
     # if a PR is from this repository (not a fork), enable automerge
-    # do not enable automerge for renovate PRs (it uses its own rules for when to merge)
-    if: github.event.pull_request.head.repo.full_name == github.repository && !startsWith(github.actor, 'renovate')
+    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     steps:
       - name: Generate token
