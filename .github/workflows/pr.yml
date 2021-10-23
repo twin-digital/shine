@@ -34,4 +34,4 @@ jobs:
       with:
         prefix_case_sensitive: true
         min_length: 10
-        regex: '^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\(.*\))?!?: [^A-Z].*[a-zA-Z0-9]$'
+        regex: '^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\(.*\))?!?: [^A-Z].*[a-zA-Z0-9)}\]]$'
