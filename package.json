@@ -1,23 +1,31 @@
 {
-  "name": "@twindigital/shine",
+  "name": "@twindigital/shine-monorepo",
   "version": "0.0.0",
   "description": "GitHub app that simplifies sharing configurations across repositories.",
-  "license": "MIT",
+  "private": true,
+  "license": "ISC",
   "engines": {
     "node": ">=12",
     "yarn": ">=2"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc",
-    "clean": "rm -rf lib",
+    "_:build": "cd $INIT_CWD && yarn tsc --build",
+    "_:clean": "cd $INIT_CWD && rm -rf lib && rm tsconfig.tsbuildinfo",
+    "_:foreach": "yarn workspaces foreach --parallel --topological-dev --exclude '@twindigital/shine-monorepo' --verbose",
+    "build": "yarn _:foreach run _:build",
+    "clean": "yarn _:foreach run _:clean",
     "lint": "run-p 'lint:*'",
     "lint:packageJson": "npmPkgJsonLint --ignorePath .gitignore .",
-    "lint:src": "eslint --cache --report-unused-disable-directives --ext '.ts,.js,.tsx,.jsx,.json' .",
+    "lint:src": "eslint --cache --fix --report-unused-disable-directives --ext '.ts,.js,.tsx,.jsx,.json' .",
+    "start": "yarn workspace @twindigital/shine-app run start",
     "watch": "tsc --watch"
   },
   "devDependencies": {
-    "@twindigital/eslint-config": "1.0.1",
+    "@twindigital/eslint-config": "1.0.3",
     "@types/lodash": "4.14.176",
     "@types/node-fetch": "3.0.2",
     "@typescript-eslint/eslint-plugin": "4.33.0",
