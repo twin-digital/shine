@@ -16,8 +16,6 @@
     "lint:src": "eslint --cache --report-unused-disable-directives --ext '.ts,.js,.tsx,.jsx,.json' .",
     "watch": "tsc --watch"
   },
-  "dependencies": {
-  },
   "devDependencies": {
     "@twindigital/eslint-config": "1.0.1",
     "@types/lodash": "^4.14.169",
