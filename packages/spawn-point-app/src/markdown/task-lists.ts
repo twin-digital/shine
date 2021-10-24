@@ -1,4 +1,4 @@
-import { filter, flow, get, isEmpty, map, reject, tap } from 'lodash/fp'
+import { filter, flow, get, isEmpty, map, reject } from 'lodash/fp'
 import marked, { Token, Tokens } from 'marked'
 
 /** Text label and checked status for one entry in a task list. */
@@ -21,7 +21,7 @@ const listItemsToTaskList = (items: Tokens.ListItem[]) => {
     items: map((item) => ({
       checked: item.checked ?? false,
       text: item.text,
-    }), items)
+    }), items),
   }
 }
 
@@ -38,6 +38,6 @@ export const getTaskLists = (markdown: string): TaskList[] => {
     map(get('items')),
     map(filter(get('task'))),
     reject(isEmpty),
-    map(listItemsToTaskList),
+    map(listItemsToTaskList)
   )(tokens)
 }
