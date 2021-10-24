@@ -41,6 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@twindigital/eslint-config", "virtual:52d61b18bd7e4fbecfd4743ddb216b5cdf2377a8155d9a0f625c9b44ce2bc6e645f446cb6c65b5058eb2b899c52fe9d572accba5911fedfaba93027bb2b23b82#npm:1.0.3"],
+            ["@types/jest", "npm:26.0.24"],
             ["@types/lodash", "npm:4.14.176"],
             ["@types/node-fetch", "npm:3.0.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:52d61b18bd7e4fbecfd4743ddb216b5cdf2377a8155d9a0f625c9b44ce2bc6e645f446cb6c65b5058eb2b899c52fe9d572accba5911fedfaba93027bb2b23b82#npm:5.1.0"],
@@ -1539,8 +1540,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@twindigital/spawn-point-app", "workspace:packages/spawn-point-app"],
             ["@types/jest", "npm:26.0.24"],
+            ["@types/lodash", "npm:4.14.176"],
+            ["@types/marked", "npm:3.0.2"],
             ["@types/node", "npm:14.17.29"],
             ["jest", "npm:26.6.3"],
+            ["lodash", "npm:4.17.21"],
+            ["marked", "npm:3.0.7"],
             ["nock", "npm:13.1.4"],
             ["probot", "npm:11.4.1"],
             ["smee-client", "npm:1.2.2"],
@@ -1556,6 +1561,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@twindigital/spawn-point-monorepo", "workspace:."],
             ["@twindigital/eslint-config", "virtual:52d61b18bd7e4fbecfd4743ddb216b5cdf2377a8155d9a0f625c9b44ce2bc6e645f446cb6c65b5058eb2b899c52fe9d572accba5911fedfaba93027bb2b23b82#npm:1.0.3"],
+            ["@types/jest", "npm:26.0.24"],
             ["@types/lodash", "npm:4.14.176"],
             ["@types/node-fetch", "npm:3.0.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:52d61b18bd7e4fbecfd4743ddb216b5cdf2377a8155d9a0f625c9b44ce2bc6e645f446cb6c65b5058eb2b899c52fe9d572accba5911fedfaba93027bb2b23b82#npm:5.1.0"],
@@ -1816,6 +1822,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-lru-cache-npm-5.1.1-46aaa305fe-e1d6c0085f.zip/node_modules/@types/lru-cache/",
           "packageDependencies": [
             ["@types/lru-cache", "npm:5.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/marked", [
+        ["npm:3.0.2", {
+          "packageLocation": "./.yarn/cache/@types-marked-npm-3.0.2-1a87744347-48c3c190f9.zip/node_modules/@types/marked/",
+          "packageDependencies": [
+            ["@types/marked", "npm:3.0.2"]
           ],
           "linkType": "HARD",
         }]
@@ -7364,6 +7379,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["map-visit", "npm:1.0.0"],
             ["object-visit", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["marked", [
+        ["npm:3.0.7", {
+          "packageLocation": "./.yarn/cache/marked-npm-3.0.7-00d7706e71-f77260b835.zip/node_modules/marked/",
+          "packageDependencies": [
+            ["marked", "npm:3.0.7"]
           ],
           "linkType": "HARD",
         }]

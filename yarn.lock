@@ -1150,8 +1150,12 @@ __metadata:
   resolution: "@twindigital/spawn-point-app@workspace:packages/spawn-point-app"
   dependencies:
     "@types/jest": ^26.0.19
+    "@types/lodash": 4.14.176
+    "@types/marked": 3.0.2
     "@types/node": ^14.14.19
     jest: ^26.6.3
+    lodash: 4.17.21
+    marked: 3.0.7
     nock: ^13.0.5
     probot: ^11.0.1
     smee-client: ^1.2.2
@@ -1165,6 +1169,7 @@ __metadata:
   resolution: "@twindigital/spawn-point-monorepo@workspace:."
   dependencies:
     "@twindigital/eslint-config": 1.0.3
+    "@types/jest": ^26.0.19
     "@types/lodash": 4.14.176
     "@types/node-fetch": 3.0.2
     "@typescript-eslint/eslint-plugin": 5.1.0
@@ -1392,6 +1397,13 @@ __metadata:
   version: 5.1.1
   resolution: "@types/lru-cache@npm:5.1.1"
   checksum: e1d6c0085f61b16ec5b3073ec76ad1be4844ea036561c3f145fc19f71f084b58a6eb600b14128aa95809d057d28f1d147c910186ae51219f58366ffd2ff2e118
+  languageName: node
+  linkType: hard
+
+"@types/marked@npm:3.0.2":
+  version: 3.0.2
+  resolution: "@types/marked@npm:3.0.2"
+  checksum: 48c3c190f97bffafbaacfc2ebcb8b87bfee12977b302ebf5ca028258f8131ffa1d3042455eaac4087bc816a3d5e0c8f65f4250e792b9dd18a533d49e99742d35
   languageName: node
   linkType: hard
 
@@ -6004,7 +6016,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"lodash@npm:4.x, lodash@npm:^4.17.21, lodash@npm:^4.7.0":
+"lodash@npm:4.17.21, lodash@npm:4.x, lodash@npm:^4.17.21, lodash@npm:^4.7.0":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -6138,6 +6150,15 @@ fsevents@^2.1.2:
   dependencies:
     object-visit: ^1.0.0
   checksum: c27045a5021c344fc19b9132eb30313e441863b2951029f8f8b66f79d3d8c1e7e5091578075a996f74e417479506fe9ede28c44ca7bc351a61c9d8073daec36a
+  languageName: node
+  linkType: hard
+
+"marked@npm:3.0.7":
+  version: 3.0.7
+  resolution: "marked@npm:3.0.7"
+  bin:
+    marked: bin/marked
+  checksum: f77260b835ec6707ad38e9e4774694bbd2322cc39bc6dc8b11eb7c8c5eef03ed19f50c0b32e5c85fb58491f91008ba8ecef5530489fbf8b0f6c57ef884f45402
   languageName: node
   linkType: hard
 

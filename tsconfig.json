@@ -31,7 +31,6 @@
     },
     "pretty": true,                             /* Stylize errors and messages using color and context. */
     "resolveJsonModule": true,                  /* Include modules imported with .json extension. */
-    "rootDir": "src",
     "skipLibCheck": true,                       /* Skip type checking of all declaration files (*.d.ts). */
     "strict": true,                             /* Enable all strict type-checking options. */
     "target": "ES2019"                         /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */

@@ -16,16 +16,18 @@
     "_:build": "cd $INIT_CWD && yarn tsc --build",
     "_:clean": "cd $INIT_CWD && rm -rf lib && rm tsconfig.tsbuildinfo",
     "_:foreach": "yarn workspaces foreach --parallel --topological-dev --exclude '@twindigital/spawn-point-monorepo' --verbose",
+    "_:test": "cd $INIT_CWD && yarn jest",
     "build": "yarn _:foreach run _:build",
     "clean": "yarn _:foreach run _:clean",
     "lint": "run-p 'lint:*'",
     "lint:packageJson": "npmPkgJsonLint --ignorePath .gitignore .",
     "lint:src": "eslint --cache --fix --report-unused-disable-directives --ext '.ts,.js,.tsx,.jsx,.json' .",
     "start": "yarn workspace @twindigital/spawn-point-app run start",
-    "watch": "tsc --watch"
+    "test": "yarn _:foreach run _:test"
   },
   "devDependencies": {
     "@twindigital/eslint-config": "1.0.3",
+    "@types/jest": "^26.0.19",
     "@types/lodash": "4.14.176",
     "@types/node-fetch": "3.0.2",
     "@typescript-eslint/eslint-plugin": "5.1.0",
