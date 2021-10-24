@@ -24,13 +24,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       },
       {
         "name": "@twindigital/spawn-point-app",
-        "reference": "workspace:packages/shine-app"
+        "reference": "workspace:packages/spawn-point-app"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.{1,2}(?:\\/|$))(?:(?:(?!(?:^|\\/)\\.{1,2}(?:\\/|$)).)*?)|$))$)",
     "fallbackExclusionList": [
-      ["@twindigital/spawn-point-app", ["workspace:packages/shine-app"]],
+      ["@twindigital/spawn-point-app", ["workspace:packages/spawn-point-app"]],
       ["@twindigital/spawn-point-monorepo", ["workspace:."]]
     ],
     "fallbackPool": [
@@ -41,6 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@twindigital/eslint-config", "virtual:52d61b18bd7e4fbecfd4743ddb216b5cdf2377a8155d9a0f625c9b44ce2bc6e645f446cb6c65b5058eb2b899c52fe9d572accba5911fedfaba93027bb2b23b82#npm:1.0.3"],
+            ["@types/jest", "npm:26.0.24"],
             ["@types/lodash", "npm:4.14.176"],
             ["@types/node-fetch", "npm:3.0.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:52d61b18bd7e4fbecfd4743ddb216b5cdf2377a8155d9a0f625c9b44ce2bc6e645f446cb6c65b5058eb2b899c52fe9d572accba5911fedfaba93027bb2b23b82#npm:5.1.0"],
@@ -1534,17 +1535,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@twindigital/spawn-point-app", [
-        ["workspace:packages/shine-app", {
-          "packageLocation": "./packages/shine-app/",
+        ["workspace:packages/spawn-point-app", {
+          "packageLocation": "./packages/spawn-point-app/",
           "packageDependencies": [
-            ["@twindigital/spawn-point-app", "workspace:packages/shine-app"],
+            ["@twindigital/spawn-point-app", "workspace:packages/spawn-point-app"],
             ["@types/jest", "npm:26.0.24"],
+            ["@types/lodash", "npm:4.14.176"],
+            ["@types/marked", "npm:3.0.2"],
             ["@types/node", "npm:14.17.29"],
             ["jest", "npm:26.6.3"],
+            ["lodash", "npm:4.17.21"],
+            ["marked", "npm:3.0.7"],
             ["nock", "npm:13.1.4"],
             ["probot", "npm:11.4.1"],
             ["smee-client", "npm:1.2.2"],
-            ["ts-jest", "virtual:6e615cf27444e69cc3718f09f4d6a0a021ee6deaf37e08a816f39cd4fe822a0ed6310ba4e6f4120d14b1a2f497e8d91ca634b2882d90ba4cd17c421abad44c27#npm:26.5.6"],
+            ["ts-jest", "virtual:fdff417eb1e5cf4f6fcf52b1603823ad4fa4cb03cb88cc2aec635aa12d592ba6b81febc51d9e542755e2238bc6aedc169b8e6da53c2a5bc7bf1d7daba06cea65#npm:26.5.6"],
             ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=32657b"]
           ],
           "linkType": "SOFT",
@@ -1556,6 +1561,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@twindigital/spawn-point-monorepo", "workspace:."],
             ["@twindigital/eslint-config", "virtual:52d61b18bd7e4fbecfd4743ddb216b5cdf2377a8155d9a0f625c9b44ce2bc6e645f446cb6c65b5058eb2b899c52fe9d572accba5911fedfaba93027bb2b23b82#npm:1.0.3"],
+            ["@types/jest", "npm:26.0.24"],
             ["@types/lodash", "npm:4.14.176"],
             ["@types/node-fetch", "npm:3.0.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:52d61b18bd7e4fbecfd4743ddb216b5cdf2377a8155d9a0f625c9b44ce2bc6e645f446cb6c65b5058eb2b899c52fe9d572accba5911fedfaba93027bb2b23b82#npm:5.1.0"],
@@ -1816,6 +1822,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-lru-cache-npm-5.1.1-46aaa305fe-e1d6c0085f.zip/node_modules/@types/lru-cache/",
           "packageDependencies": [
             ["@types/lru-cache", "npm:5.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/marked", [
+        ["npm:3.0.2", {
+          "packageLocation": "./.yarn/cache/@types-marked-npm-3.0.2-1a87744347-48c3c190f9.zip/node_modules/@types/marked/",
+          "packageDependencies": [
+            ["@types/marked", "npm:3.0.2"]
           ],
           "linkType": "HARD",
         }]
@@ -7368,6 +7383,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["marked", [
+        ["npm:3.0.7", {
+          "packageLocation": "./.yarn/cache/marked-npm-3.0.7-00d7706e71-f77260b835.zip/node_modules/marked/",
+          "packageDependencies": [
+            ["marked", "npm:3.0.7"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["media-typer", [
         ["npm:0.3.0", {
           "packageLocation": "./.yarn/cache/media-typer-npm-0.3.0-8674f8f0f5-af1b38516c.zip/node_modules/media-typer/",
@@ -10270,10 +10294,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:6e615cf27444e69cc3718f09f4d6a0a021ee6deaf37e08a816f39cd4fe822a0ed6310ba4e6f4120d14b1a2f497e8d91ca634b2882d90ba4cd17c421abad44c27#npm:26.5.6", {
-          "packageLocation": "./.yarn/__virtual__/ts-jest-virtual-627454f875/0/cache/ts-jest-npm-26.5.6-fa1909416a-6f65ad4fe6.zip/node_modules/ts-jest/",
+        ["virtual:fdff417eb1e5cf4f6fcf52b1603823ad4fa4cb03cb88cc2aec635aa12d592ba6b81febc51d9e542755e2238bc6aedc169b8e6da53c2a5bc7bf1d7daba06cea65#npm:26.5.6", {
+          "packageLocation": "./.yarn/__virtual__/ts-jest-virtual-0cf27a031e/0/cache/ts-jest-npm-26.5.6-fa1909416a-6f65ad4fe6.zip/node_modules/ts-jest/",
           "packageDependencies": [
-            ["ts-jest", "virtual:6e615cf27444e69cc3718f09f4d6a0a021ee6deaf37e08a816f39cd4fe822a0ed6310ba4e6f4120d14b1a2f497e8d91ca634b2882d90ba4cd17c421abad44c27#npm:26.5.6"],
+            ["ts-jest", "virtual:fdff417eb1e5cf4f6fcf52b1603823ad4fa4cb03cb88cc2aec635aa12d592ba6b81febc51d9e542755e2238bc6aedc169b8e6da53c2a5bc7bf1d7daba06cea65#npm:26.5.6"],
             ["@types/jest", "npm:26.0.24"],
             ["@types/typescript", null],
             ["bs-logger", "npm:0.2.6"],
