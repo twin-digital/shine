@@ -66,10 +66,10 @@ describe('getTaskLists', () => {
   it('parses ordered lists with tasks', () => {
     const result = getTaskLists(ORDERED_LIST_WITH_TASKS)
     const items = result?.[0]?.items
-    
+
     expect(result).toHaveLength(1)
     expect(items).toHaveLength(3)
-    
+
     // labels
     expect(items[0].text).toEqual('Item 1')
     expect(items[1].text).toEqual('Item 2')
@@ -84,10 +84,10 @@ describe('getTaskLists', () => {
   it('parses unordered lists with tasks', () => {
     const result = getTaskLists(UNORDERED_LIST_WITH_TASKS)
     const items = result?.[0]?.items
-    
+
     expect(result).toHaveLength(1)
     expect(items).toHaveLength(3)
-    
+
     // labels
     expect(items[0].text).toEqual('Item 1')
     expect(items[1].text).toEqual('Item 2')
