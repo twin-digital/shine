@@ -1,5 +1,3 @@
-_extends: .github
-
 repository:
   description: Simplify sharing configurations across all your repositories.
 
