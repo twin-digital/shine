@@ -24,13 +24,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       },
       {
         "name": "@twindigital/spawn-point-app",
-        "reference": "workspace:packages/shine-app"
+        "reference": "workspace:packages/spawn-point-app"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.{1,2}(?:\\/|$))(?:(?:(?!(?:^|\\/)\\.{1,2}(?:\\/|$)).)*?)|$))$)",
     "fallbackExclusionList": [
-      ["@twindigital/spawn-point-app", ["workspace:packages/shine-app"]],
+      ["@twindigital/spawn-point-app", ["workspace:packages/spawn-point-app"]],
       ["@twindigital/spawn-point-monorepo", ["workspace:."]]
     ],
     "fallbackPool": [
@@ -1534,17 +1534,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@twindigital/spawn-point-app", [
-        ["workspace:packages/shine-app", {
-          "packageLocation": "./packages/shine-app/",
+        ["workspace:packages/spawn-point-app", {
+          "packageLocation": "./packages/spawn-point-app/",
           "packageDependencies": [
-            ["@twindigital/spawn-point-app", "workspace:packages/shine-app"],
+            ["@twindigital/spawn-point-app", "workspace:packages/spawn-point-app"],
             ["@types/jest", "npm:26.0.24"],
             ["@types/node", "npm:14.17.29"],
             ["jest", "npm:26.6.3"],
             ["nock", "npm:13.1.4"],
             ["probot", "npm:11.4.1"],
             ["smee-client", "npm:1.2.2"],
-            ["ts-jest", "virtual:6e615cf27444e69cc3718f09f4d6a0a021ee6deaf37e08a816f39cd4fe822a0ed6310ba4e6f4120d14b1a2f497e8d91ca634b2882d90ba4cd17c421abad44c27#npm:26.5.6"],
+            ["ts-jest", "virtual:fdff417eb1e5cf4f6fcf52b1603823ad4fa4cb03cb88cc2aec635aa12d592ba6b81febc51d9e542755e2238bc6aedc169b8e6da53c2a5bc7bf1d7daba06cea65#npm:26.5.6"],
             ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=32657b"]
           ],
           "linkType": "SOFT",
@@ -10270,10 +10270,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:6e615cf27444e69cc3718f09f4d6a0a021ee6deaf37e08a816f39cd4fe822a0ed6310ba4e6f4120d14b1a2f497e8d91ca634b2882d90ba4cd17c421abad44c27#npm:26.5.6", {
-          "packageLocation": "./.yarn/__virtual__/ts-jest-virtual-627454f875/0/cache/ts-jest-npm-26.5.6-fa1909416a-6f65ad4fe6.zip/node_modules/ts-jest/",
+        ["virtual:fdff417eb1e5cf4f6fcf52b1603823ad4fa4cb03cb88cc2aec635aa12d592ba6b81febc51d9e542755e2238bc6aedc169b8e6da53c2a5bc7bf1d7daba06cea65#npm:26.5.6", {
+          "packageLocation": "./.yarn/__virtual__/ts-jest-virtual-0cf27a031e/0/cache/ts-jest-npm-26.5.6-fa1909416a-6f65ad4fe6.zip/node_modules/ts-jest/",
           "packageDependencies": [
-            ["ts-jest", "virtual:6e615cf27444e69cc3718f09f4d6a0a021ee6deaf37e08a816f39cd4fe822a0ed6310ba4e6f4120d14b1a2f497e8d91ca634b2882d90ba4cd17c421abad44c27#npm:26.5.6"],
+            ["ts-jest", "virtual:fdff417eb1e5cf4f6fcf52b1603823ad4fa4cb03cb88cc2aec635aa12d592ba6b81febc51d9e542755e2238bc6aedc169b8e6da53c2a5bc7bf1d7daba06cea65#npm:26.5.6"],
             ["@types/jest", "npm:26.0.24"],
             ["@types/typescript", null],
             ["bs-logger", "npm:0.2.6"],

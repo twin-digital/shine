@@ -1145,9 +1145,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twindigital/spawn-point-app@workspace:packages/shine-app":
+"@twindigital/spawn-point-app@workspace:packages/spawn-point-app":
   version: 0.0.0-use.local
-  resolution: "@twindigital/spawn-point-app@workspace:packages/shine-app"
+  resolution: "@twindigital/spawn-point-app@workspace:packages/spawn-point-app"
   dependencies:
     "@types/jest": ^26.0.19
     "@types/node": ^14.14.19
