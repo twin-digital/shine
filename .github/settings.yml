@@ -1,5 +1,7 @@
+_extends: .github
+
 repository:
-  description: GitHub app that simplifies sharing configurations across repositories.
+  description: Simplify sharing configurations across all your repositories.
 
 branches:
   - name: main
