@@ -1,3 +1,3 @@
-# Shine
+# Spawn Point
 
-Utilities to help build HTTP clients.
+Simplify sharing configurations across all your repositories.
