@@ -1,15 +1,20 @@
 import { Probot } from 'probot'
 
 export = (app: Probot) => {
-  app.on('issues.opened', async (context) => {
-    const issueComment = context.issue({
-      body: 'Thanks for opening this issue!',
-    })
-    await context.octokit.issues.createComment(issueComment)
-  })
-  // For more information on building apps:
-  // https://probot.github.io/docs/
+  app.log.info('Starting Spawn Point...')
 
-  // To get your app running against GitHub, see:
-  // https://probot.github.io/docs/development/
+  app.on('repository.created', async (context) => {
+    context.log.info(`Repository created: ${JSON.stringify(context.repo())}`)
+    context.log.info(`Repository created: ${JSON.stringify(context.repo())}`)
+
+    await context.octokit.issues.create({
+      ...context.repo(),
+      title: 'Configure Repository',
+      body: `### Repository Configuration
+Please select which of the following blueprints to install in this repository:
+
+* [ ] Lorem Ipusm
+`
+    })
+  })
 };
