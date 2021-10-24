@@ -1183,7 +1183,7 @@ __metadata:
     "@types/node-fetch": 3.0.2
     "@typescript-eslint/eslint-plugin": 5.1.0
     "@typescript-eslint/parser": 5.1.0
-    eslint: 7.x
+    eslint: 7.32.0
     eslint-import-resolver-node: 0.3.6
     eslint-plugin-import: 2.25.2
     eslint-plugin-jest: 25.2.2
@@ -3493,7 +3493,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:7.x":
+"eslint@npm:7.32.0":
   version: 7.32.0
   resolution: "eslint@npm:7.32.0"
   dependencies:
