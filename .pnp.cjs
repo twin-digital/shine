@@ -1332,7 +1332,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pino-pretty", "npm:6.0.0"],
             ["pump", "npm:3.0.0"],
             ["readable-stream", "npm:3.6.0"],
-            ["split2", "npm:4.0.0"]
+            ["split2", "npm:4.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -9801,10 +9801,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:4.0.0", {
-          "packageLocation": "./.yarn/cache/split2-npm-4.0.0-44618a9cb9-dde91b9824.zip/node_modules/split2/",
+        ["npm:4.1.0", {
+          "packageLocation": "./.yarn/cache/split2-npm-4.1.0-1c1a4bd984-ec581597cb.zip/node_modules/split2/",
           "packageDependencies": [
-            ["split2", "npm:4.0.0"]
+            ["split2", "npm:4.1.0"]
           ],
           "linkType": "HARD",
         }]
