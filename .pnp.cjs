@@ -1542,7 +1542,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:26.0.24"],
             ["@types/lodash", "npm:4.14.176"],
             ["@types/marked", "npm:3.0.2"],
-            ["@types/node", "npm:14.17.31"],
+            ["@types/node", "npm:14.17.32"],
             ["jest", "npm:26.6.3"],
             ["lodash", "npm:4.17.21"],
             ["marked", "npm:3.0.7"],
@@ -1854,10 +1854,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
-        ["npm:14.17.31", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.31-3e2d338102-ac6b9e88a2.zip/node_modules/@types/node/",
+        ["npm:14.17.32", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.32-a7799c3ea0-c3ec45db5d.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:14.17.31"]
+            ["@types/node", "npm:14.17.32"]
           ],
           "linkType": "HARD",
         }],
