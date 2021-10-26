@@ -1,7 +1,6 @@
 import { Probot } from 'probot'
 
 import { ConfigurationManager } from './configuration-manager'
-import { getTaskLists } from './markdown/task-lists'
 
 export = (app: Probot) => {
   app.log.info('Starting Spawn Point...')
@@ -23,12 +22,12 @@ Please select which of the following blueprints to install in this repository:
       ...context.issue(),
     })).data
 
-    if (issue.user?.login === 'spawn-point[bot]') {
-      context.log(`Tasks: ${JSON.stringify(getTaskLists(issue.body ?? ''), null, 2)}`)
-    }
+    if (issue.user?.login === 'spawn-point[bot]' && issue.body !== undefined && issue.body !== null) {
+      // TODO: more robust checks on issue
+      // TODO: handle empty body differently
 
-    context.log(`Requested config: ${JSON.stringify(
-      await new ConfigurationManager(context.octokit, context.repo()).getRequestedConfig())
-    }`)
+      const config = await new ConfigurationManager(context.octokit, context.repo())
+      await config.updateConfigurationChangePr()
+    }
   })
 };
