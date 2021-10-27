@@ -1557,7 +1557,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:16.11.6"],
             ["jest", "npm:26.6.3"],
             ["lodash", "npm:4.17.21"],
-            ["marked", "npm:3.0.7"],
+            ["marked", "npm:3.0.8"],
             ["nock", "npm:13.1.4"],
             ["probot", "npm:11.4.1"],
             ["smee-client", "npm:1.2.2"],
@@ -7478,10 +7478,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["marked", [
-        ["npm:3.0.7", {
-          "packageLocation": "./.yarn/cache/marked-npm-3.0.7-00d7706e71-f77260b835.zip/node_modules/marked/",
+        ["npm:3.0.8", {
+          "packageLocation": "./.yarn/cache/marked-npm-3.0.8-bc173430e9-3cdeaa126b.zip/node_modules/marked/",
           "packageDependencies": [
-            ["marked", "npm:3.0.7"]
+            ["marked", "npm:3.0.8"]
           ],
           "linkType": "HARD",
         }]
