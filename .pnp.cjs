@@ -1755,6 +1755,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/spawn-point-app/",
           "packageDependencies": [
             ["@twindigital/spawn-point-app", "workspace:packages/spawn-point-app"],
+            ["@octokit/core", "npm:3.5.1"],
             ["@octokit/graphql-schema", "npm:10.73.0"],
             ["@types/jest", "npm:27.0.2"],
             ["@types/lodash", "npm:4.14.176"],
