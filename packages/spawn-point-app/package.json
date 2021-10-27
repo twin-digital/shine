@@ -13,6 +13,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@octokit/core": "3.5.1",
     "lodash": "4.17.21",
     "marked": "3.0.8",
     "probot": "11.4.1"
