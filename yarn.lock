@@ -801,7 +801,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/core@npm:^3.2.4":
+"@octokit/core@npm:3.5.1, @octokit/core@npm:^3.2.4":
   version: 3.5.1
   resolution: "@octokit/core@npm:3.5.1"
   dependencies:
@@ -1174,6 +1174,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@twindigital/spawn-point-app@workspace:packages/spawn-point-app"
   dependencies:
+    "@octokit/core": 3.5.1
     "@octokit/graphql-schema": 10.73.0
     "@types/jest": 26.0.24
     "@types/lodash": 4.14.176
